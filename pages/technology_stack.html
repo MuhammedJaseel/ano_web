@@ -1,0 +1,1912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore DevForge Solutions' comprehensive technology stack including Mobile Development, Web Applications, Blockchain, Gaming, and SaaS platforms. Cutting-edge tools and frameworks for digital innovation.">
+    <meta name="keywords" content="technology stack, mobile development, web applications, blockchain, gaming, SaaS, React, Node.js, Solidity, Unity">
+    <title>Technology Stack - DevForge Solutions</title>
+    <link rel="stylesheet" href="../css/main.css">
+  
+  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdevforges9476back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.12"></script>
+  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+  </head>
+<body class="bg-background">
+    <!-- Navigation -->
+    <nav id="main-navigation" class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-border z-50 transition-all duration-300">
+        <div class="container-custom">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="homepage.html" class="flex items-center space-x-3 group">
+                    <svg class="w-10 h-10 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="url(#logo-gradient)"/>
+                        <path d="M12 28V12L20 20L28 12V28L20 20L12 28Z" fill="white"/>
+                        <defs>
+                            <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40">
+                                <stop offset="0%" stop-color="#2D1B69"/>
+                                <stop offset="100%" stop-color="#4C3A9B"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="font-headline text-xl font-bold text-primary">DevForge</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="services.html" class="text-text-secondary hover:text-primary transition-colors">Services</a>
+                    <a href="portfolio.html" class="text-text-secondary hover:text-primary transition-colors">Portfolio</a>
+                    <a href="technology_stack.html" class="text-primary font-medium border-b-2 border-accent py-1">Technology</a>
+                    <a href="about.html" class="text-text-secondary hover:text-primary transition-colors">About</a>
+                    <a href="contact.html" class="btn-primary">Get Started</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-primary" aria-label="Toggle mobile menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-border bg-white">
+            <div class="container-custom py-4 space-y-3">
+                <a href="homepage.html" class="block px-4 py-2 text-text-secondary hover:bg-surface rounded-lg transition-colors">Home</a>
+                <a href="services.html" class="block px-4 py-2 text-text-secondary hover:bg-surface rounded-lg transition-colors">Services</a>
+                <a href="portfolio.html" class="block px-4 py-2 text-text-secondary hover:bg-surface rounded-lg transition-colors">Portfolio</a>
+                <a href="technology_stack.html" class="block px-4 py-2 text-primary font-medium bg-primary-50 rounded-lg">Technology</a>
+                <a href="about.html" class="block px-4 py-2 text-text-secondary hover:bg-surface rounded-lg transition-colors">About</a>
+                <a href="contact.html" class="block px-4 py-2 bg-primary text-white text-center rounded-lg font-medium">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-700">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2944&auto=format&fit=crop')] bg-cover bg-center opacity-10" 
+             onerror="this.style.backgroundImage='url(https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop)'; this.onerror=null;"></div>
+        
+        <!-- Animated Particles -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute w-96 h-96 bg-accent/20 rounded-full blur-3xl -top-48 -left-48 animate-pulse-slow"></div>
+            <div class="absolute w-96 h-96 bg-secondary/20 rounded-full blur-3xl -bottom-48 -right-48 animate-pulse-slow" style="animation-delay: 1s;"></div>
+        </div>
+
+        <div class="container-custom relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8">
+                    <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+                    <span class="text-white text-sm font-medium">50+ Technologies Mastered</span>
+                </div>
+
+                <h1 class="text-white mb-6 animate-fade-in">
+                    Our <span class="text-accent">Technology Stack</span>
+                </h1>
+                
+                <p class="text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed animate-slide-up">
+                    Cutting-edge tools, frameworks, and platforms that power innovation. From mobile to blockchain, we leverage the best technologies to build exceptional digital solutions.
+                </p>
+
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 border-t border-white/20">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-accent mb-2">50+</div>
+                        <div class="text-white/80 text-sm">Technologies</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-accent mb-2">15+</div>
+                        <div class="text-white/80 text-sm">Certifications</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-accent mb-2">100%</div>
+                        <div class="text-white/80 text-sm">Up-to-Date</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-accent mb-2">24/7</div>
+                        <div class="text-white/80 text-sm">Innovation</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Categories Navigation -->
+    <section class="section-sm bg-white border-b border-border sticky top-20 z-40">
+        <div class="container-custom">
+            <div class="flex items-center justify-center overflow-x-auto">
+                <div class="flex space-x-2 md:space-x-4">
+                    <a href="#frontend" class="px-4 py-2 text-sm font-medium text-text-secondary hover:text-primary hover:bg-surface rounded-lg transition-colors whitespace-nowrap">Frontend</a>
+                    <a href="#backend" class="px-4 py-2 text-sm font-medium text-text-secondary hover:text-primary hover:bg-surface rounded-lg transition-colors whitespace-nowrap">Backend</a>
+                    <a href="#mobile" class="px-4 py-2 text-sm font-medium text-text-secondary hover:text-primary hover:bg-surface rounded-lg transition-colors whitespace-nowrap">Mobile</a>
+                    <a href="#blockchain" class="px-4 py-2 text-sm font-medium text-text-secondary hover:text-primary hover:bg-surface rounded-lg transition-colors whitespace-nowrap">Blockchain</a>
+                    <a href="#gaming" class="px-4 py-2 text-sm font-medium text-text-secondary hover:text-primary hover:bg-surface rounded-lg transition-colors whitespace-nowrap">Gaming</a>
+                    <a href="#cloud" class="px-4 py-2 text-sm font-medium text-text-secondary hover:text-primary hover:bg-surface rounded-lg transition-colors whitespace-nowrap">Cloud & DevOps</a>
+                    <a href="#database" class="px-4 py-2 text-sm font-medium text-text-secondary hover:text-primary hover:bg-surface rounded-lg transition-colors whitespace-nowrap">Database</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frontend Technologies -->
+    <section id="frontend" class="section bg-surface">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-xl mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                </div>
+                <h2 class="text-primary mb-4">Frontend Technologies</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Modern frameworks and libraries for building responsive, performant user interfaces
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- React -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_12d9bc768-1766923978700.png" 
+                             alt="React JavaScript library logo for building user interfaces" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">React & Next.js</h4>
+                    <p class="text-text-secondary mb-4">Component-based architecture with server-side rendering and static site generation capabilities</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            React 18+ with Hooks
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Next.js 14 App Router
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Redux & Context API
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vue -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_181a557ae-1764675852340.png" 
+                             alt="Vue.js progressive JavaScript framework logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Vue & Nuxt.js</h4>
+                    <p class="text-text-secondary mb-4">Progressive framework with intuitive API and powerful ecosystem for modern web applications</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Vue 3 Composition API
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Nuxt 3 with SSR
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Vuex & Pinia
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Angular -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1468e5d8e-1767382623682.png" 
+                             alt="Angular TypeScript-based web application framework logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-primary-50 text-primary text-xs font-medium rounded-full">Advanced</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Angular</h4>
+                    <p class="text-text-secondary mb-4">Enterprise-grade framework with TypeScript, dependency injection, and comprehensive tooling</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Angular 17+
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            RxJS & NgRx
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            TypeScript 5+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tailwind CSS -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_17fad8bde-1766855250169.png" 
+                             alt="Tailwind CSS utility-first framework logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Tailwind CSS</h4>
+                    <p class="text-text-secondary mb-4">Utility-first CSS framework for rapid UI development with custom design systems</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Tailwind v3+
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Custom Design Systems
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            JIT Compilation
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TypeScript -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1f9be5c9e-1766923978266.png" 
+                             alt="TypeScript typed superset of JavaScript logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">TypeScript</h4>
+                    <p class="text-text-secondary mb-4">Strongly typed programming language that builds on JavaScript for better tooling</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            TypeScript 5+
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Advanced Type Systems
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Strict Mode
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WebAssembly -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
+                            <span class="text-white font-bold text-2xl">Wasm</span>
+                        </div>
+                        <span class="px-3 py-1 bg-primary-50 text-primary text-xs font-medium rounded-full">Advanced</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">WebAssembly</h4>
+                    <p class="text-text-secondary mb-4">High-performance binary instruction format for near-native web applications</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Rust & C++ Integration
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Performance Optimization
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Browser Support
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Backend Technologies -->
+    <section id="backend" class="section bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-xl mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+                    </svg>
+                </div>
+                <h2 class="text-primary mb-4">Backend Technologies</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Robust server-side solutions for scalable, secure, and high-performance applications
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Node.js -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_15ec51b2c-1764646512118.png" 
+                             alt="Node.js JavaScript runtime environment logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Node.js & Express</h4>
+                    <p class="text-text-secondary mb-4">JavaScript runtime for building fast, scalable network applications with Express framework</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Node.js 20 LTS
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Express.js & Fastify
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            RESTful & GraphQL APIs
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Python -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1d8a74e23-1764641706225.png" 
+                             alt="Python programming language logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Python & Django</h4>
+                    <p class="text-text-secondary mb-4">High-level programming language with Django framework for rapid development</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Python 3.12+
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Django & FastAPI
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            ML & Data Processing
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ruby -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_188826ef3-1765047134327.png" 
+                             alt="Ruby programming language logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1555952494-efd681c7e3f9?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-primary-50 text-primary text-xs font-medium rounded-full">Advanced</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Ruby on Rails</h4>
+                    <p class="text-text-secondary mb-4">Convention-over-configuration framework for rapid web application development</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Ruby 3.3+
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Rails 7+
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Active Record ORM
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GraphQL -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1994b9a1a-1767382625904.png" 
+                             alt="GraphQL query language for APIs logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">GraphQL</h4>
+                    <p class="text-text-secondary mb-4">Query language for APIs with flexible data fetching and strong typing</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Apollo Server
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Schema Design
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Real-time Subscriptions
+                        </div>
+                    </div>
+                </div>
+
+                <!-- REST API -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">RESTful APIs</h4>
+                    <p class="text-text-secondary mb-4">Industry-standard architectural style for designing networked applications</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            OpenAPI Specification
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            JWT Authentication
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Rate Limiting
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Microservices -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-accent to-secondary rounded-xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+                            </svg>
+                        </div>
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Microservices</h4>
+                    <p class="text-text-secondary mb-4">Distributed architecture pattern for building scalable, maintainable applications</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Service Mesh
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Event-Driven Architecture
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            API Gateway
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Technologies -->
+    <section id="mobile" class="section bg-surface">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-600 to-accent rounded-xl mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                    </svg>
+                </div>
+                <h2 class="text-primary mb-4">Mobile Technologies</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Native and cross-platform solutions for iOS and Android development
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- React Native -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_123143ae6-1764698783387.png" 
+                             alt="React Native cross-platform mobile framework logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">React Native</h4>
+                    <p class="text-text-secondary mb-4">Cross-platform mobile development with native performance and shared codebase</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            React Native 0.73+
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Expo & Bare Workflow
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Native Modules
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flutter -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_106b94720-1767382624208.png" 
+                             alt="Flutter UI toolkit for cross-platform development logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1617040619263-41c5a9ca7521?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Flutter</h4>
+                    <p class="text-text-secondary mb-4">Google's UI toolkit for beautiful, natively compiled multi-platform applications</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Flutter 3.16+
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Dart Language
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Material & Cupertino
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swift -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_161e7230d-1765815797482.png" 
+                             alt="Swift programming language for iOS development logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1621839673705-6617adf9e890?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Swift & iOS</h4>
+                    <p class="text-text-secondary mb-4">Native iOS development with Swift for optimal performance and user experience</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Swift 5.9+
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            SwiftUI & UIKit
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            iOS 17+ Support
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kotlin -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_11d34fb5d-1765815797196.png" 
+                             alt="Kotlin programming language for Android development logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Kotlin & Android</h4>
+                    <p class="text-text-secondary mb-4">Modern Android development with Kotlin for concise, safe, and expressive code</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Kotlin 1.9+
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Jetpack Compose
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Android 14+ Support
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ionic -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1c2531168-1765398709220.png" 
+                             alt="Ionic hybrid mobile app framework logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-primary-50 text-primary text-xs font-medium rounded-full">Advanced</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Ionic</h4>
+                    <p class="text-text-secondary mb-4">Hybrid mobile app framework with web technologies and native capabilities</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Ionic 7+
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Capacitor
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Angular/React/Vue
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PWA -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                            </svg>
+                        </div>
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Progressive Web Apps</h4>
+                    <p class="text-text-secondary mb-4">Web applications with native-like experience and offline capabilities</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Service Workers
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Offline Support
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Push Notifications
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blockchain Technologies -->
+    <section id="blockchain" class="section bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-accent to-secondary rounded-xl mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                    </svg>
+                </div>
+                <h2 class="text-primary mb-4">Blockchain Technologies</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Decentralized solutions with smart contracts, DApps, and EVM integration
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Ethereum -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" viewBox="0 0 256 417" fill="currentColor">
+                                <path d="M127.961 0l-2.795 9.5v275.668l2.795 2.79 127.962-75.638z" opacity=".6"/>
+                                <path d="M127.962 0L0 212.32l127.962 75.639V154.158z"/>
+                                <path d="M127.961 312.187l-1.575 1.92v98.199l1.575 4.6L256 236.587z" opacity=".6"/>
+                                <path d="M127.962 416.905v-104.72L0 236.585z"/>
+                                <path d="M127.961 287.958l127.96-75.637-127.96-58.162z" opacity=".2"/>
+                                <path d="M0 212.32l127.96 75.638v-133.8z" opacity=".6"/>
+                            </svg>
+                        </div>
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Ethereum & EVM</h4>
+                    <p class="text-text-secondary mb-4">Smart contract development on Ethereum and EVM-compatible blockchains</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Solidity 0.8+
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Hardhat & Truffle
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            ERC Standards
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web3.js -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">Web3</span>
+                        </div>
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Web3.js & Ethers.js</h4>
+                    <p class="text-text-secondary mb-4">JavaScript libraries for interacting with Ethereum blockchain and smart contracts</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Web3.js 4.x
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Ethers.js 6.x
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Wallet Integration
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smart Contracts -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Smart Contracts</h4>
+                    <p class="text-text-secondary mb-4">Self-executing contracts with automated business logic on blockchain</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Security Audits
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Gas Optimization
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Testing & Deployment
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DApps -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary-600 to-accent rounded-xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                            </svg>
+                        </div>
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">DApps Development</h4>
+                    <p class="text-text-secondary mb-4">Decentralized applications with blockchain backend and web3 integration</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Full-Stack DApps
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            IPFS Integration
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            MetaMask Support
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NFT -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">NFT Development</h4>
+                    <p class="text-text-secondary mb-4">Non-fungible token creation, marketplaces, and digital asset management</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            ERC-721 & ERC-1155
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Marketplace Development
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Metadata Standards
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DeFi -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-accent to-secondary rounded-xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <span class="px-3 py-1 bg-primary-50 text-primary text-xs font-medium rounded-full">Advanced</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">DeFi Solutions</h4>
+                    <p class="text-text-secondary mb-4">Decentralized finance protocols, DEX, lending platforms, and yield farming</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            AMM Protocols
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Liquidity Pools
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Staking Mechanisms
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gaming Technologies -->
+    <section id="gaming" class="section bg-surface">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-600 to-accent rounded-xl mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <h2 class="text-primary mb-4">Gaming Technologies</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Immersive gaming experiences with cutting-edge engines and frameworks
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Unity -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1e94466df-1767382623426.png" 
+                             alt="Unity game engine for 2D and 3D game development logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Unity</h4>
+                    <p class="text-text-secondary mb-4">Cross-platform game engine for 2D, 3D, VR, and AR game development</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Unity 2023 LTS
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            C# Scripting
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Multi-platform Export
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Unreal Engine -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_12145d437-1766906299828.png" 
+                             alt="Unreal Engine high-fidelity game development platform logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1552820728-8b83bb6b773f?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Unreal Engine</h4>
+                    <p class="text-text-secondary mb-4">High-fidelity game engine with photorealistic graphics and advanced physics</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Unreal Engine 5
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Blueprint & C++
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Nanite & Lumen
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Godot -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_148082aed-1765722631604.png" 
+                             alt="Godot open-source game engine logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-primary-50 text-primary text-xs font-medium rounded-full">Advanced</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Godot Engine</h4>
+                    <p class="text-text-secondary mb-4">Open-source game engine with intuitive scene system and GDScript</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Godot 4.x
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            GDScript & C#
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            2D & 3D Support
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Three.js -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1e2b15dba-1765197894837.png" 
+                             alt="Three.js JavaScript 3D library logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Three.js</h4>
+                    <p class="text-text-secondary mb-4">JavaScript library for creating 3D graphics and interactive experiences in the browser</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Three.js r160+
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            WebGL Rendering
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Physics Integration
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phaser -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">P</span>
+                        </div>
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Phaser</h4>
+                    <p class="text-text-secondary mb-4">Fast, free, and fun HTML5 game framework for desktop and mobile browsers</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Phaser 3.x
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            2D Game Focus
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Arcade Physics
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AR/VR -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                        </div>
+                        <span class="px-3 py-1 bg-primary-50 text-primary text-xs font-medium rounded-full">Advanced</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">AR/VR Development</h4>
+                    <p class="text-text-secondary mb-4">Augmented and virtual reality experiences for immersive gaming</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            ARKit & ARCore
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Oculus & SteamVR
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            WebXR Support
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cloud & DevOps -->
+    <section id="cloud" class="section bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-secondary to-primary-600 rounded-xl mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+                    </svg>
+                </div>
+                <h2 class="text-primary mb-4">Cloud & DevOps</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Scalable infrastructure, continuous deployment, and automated workflows
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AWS -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_106cc9325-1764641705956.png" 
+                             alt="Amazon Web Services cloud computing platform logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">AWS</h4>
+                    <p class="text-text-secondary mb-4">Comprehensive cloud services for computing, storage, and application deployment</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            EC2, S3, Lambda
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            RDS, DynamoDB
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            CloudFormation
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Docker -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1af9eed97-1764675856157.png" 
+                             alt="Docker containerization platform logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1605745341112-85968b19335b?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Docker</h4>
+                    <p class="text-text-secondary mb-4">Containerization platform for consistent development and deployment environments</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Docker Compose
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Multi-stage Builds
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Container Orchestration
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kubernetes -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1ddfa453d-1764646511812.png" 
+                             alt="Kubernetes container orchestration platform logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Kubernetes</h4>
+                    <p class="text-text-secondary mb-4">Container orchestration for automated deployment, scaling, and management</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            K8s Clusters
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Helm Charts
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Auto-scaling
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CI/CD -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                            </svg>
+                        </div>
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">CI/CD Pipelines</h4>
+                    <p class="text-text-secondary mb-4">Automated testing, building, and deployment workflows for rapid delivery</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            GitHub Actions
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            GitLab CI/CD
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Jenkins
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terraform -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1436315e6-1767382624983.png" 
+                             alt="Terraform infrastructure as code tool logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-primary-50 text-primary text-xs font-medium rounded-full">Advanced</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Terraform</h4>
+                    <p class="text-text-secondary mb-4">Infrastructure as code for provisioning and managing cloud resources</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Multi-cloud Support
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            State Management
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Module Reusability
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monitoring -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Monitoring & Logging</h4>
+                    <p class="text-text-secondary mb-4">Real-time application monitoring, logging, and performance analytics</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Prometheus & Grafana
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            ELK Stack
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            New Relic
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Database Technologies -->
+    <section id="database" class="section bg-surface">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-accent to-secondary rounded-xl mb-6">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+                    </svg>
+                </div>
+                <h2 class="text-primary mb-4">Database Technologies</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Robust data storage solutions for SQL, NoSQL, and in-memory databases
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- PostgreSQL -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_144b3b344-1767284178754.png" 
+                             alt="PostgreSQL relational database management system logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">PostgreSQL</h4>
+                    <p class="text-text-secondary mb-4">Advanced open-source relational database with ACID compliance</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            PostgreSQL 16+
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            JSON Support
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Full-text Search
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MongoDB -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_19e7ea4ed-1765923571505.png" 
+                             alt="MongoDB NoSQL document database logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">MongoDB</h4>
+                    <p class="text-text-secondary mb-4">Document-oriented NoSQL database for flexible, scalable data storage</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            MongoDB 7+
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Aggregation Pipeline
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Sharding & Replication
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Redis -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_182974f86-1766924916897.png" 
+                             alt="Redis in-memory data structure store logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Redis</h4>
+                    <p class="text-text-secondary mb-4">In-memory data structure store for caching and real-time applications</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Redis 7+
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Pub/Sub Messaging
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Session Management
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MySQL -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_14404f9c6-1764698785007.png" 
+                             alt="MySQL relational database management system logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">MySQL</h4>
+                    <p class="text-text-secondary mb-4">Popular open-source relational database for web applications</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            MySQL 8+
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            InnoDB Engine
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Replication
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elasticsearch -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">ES</span>
+                        </div>
+                        <span class="px-3 py-1 bg-primary-50 text-primary text-xs font-medium rounded-full">Advanced</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Elasticsearch</h4>
+                    <p class="text-text-secondary mb-4">Distributed search and analytics engine for full-text search</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Elasticsearch 8+
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Full-text Search
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Analytics & Aggregations
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Firebase -->
+                <div class="card-elevated p-8 hover:scale-105 transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_10275261b-1764924830221.png" 
+                             alt="Firebase real-time database and backend services logo" 
+                             class="w-16 h-16"
+                             onerror="this.src='https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                        <span class="px-3 py-1 bg-accent-50 text-accent text-xs font-medium rounded-full">Expert</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Firebase</h4>
+                    <p class="text-text-secondary mb-4">Real-time database and backend services for mobile and web applications</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Firestore
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Real-time Sync
+                        </div>
+                        <div class="flex items-center text-sm text-text-tertiary">
+                            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Authentication
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Partnerships -->
+    <section class="section bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-primary mb-4">Technology Partnerships & Certifications</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Certified experts with official partnerships from leading technology platforms
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Google Cloud -->
+                <div class="card p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-surface rounded-xl flex items-center justify-center">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1cfda3454-1764646514053.png" 
+                             alt="Google Cloud Platform certified partner logo" 
+                             class="w-12 h-12"
+                             onerror="this.src='https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                    </div>
+                    <h4 class="font-bold text-primary mb-2">Google Cloud</h4>
+                    <p class="text-sm text-text-tertiary">Certified Partner</p>
+                </div>
+
+                <!-- Apple Developer -->
+                <div class="card p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-surface rounded-xl flex items-center justify-center">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1ac755e64-1767382625198.png" 
+                             alt="Apple Developer Program member logo" 
+                             class="w-12 h-12"
+                             onerror="this.src='https://images.unsplash.com/photo-1621839673705-6617adf9e890?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                    </div>
+                    <h4 class="font-bold text-primary mb-2">Apple Developer</h4>
+                    <p class="text-sm text-text-tertiary">Program Member</p>
+                </div>
+
+                <!-- AWS -->
+                <div class="card p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-surface rounded-xl flex items-center justify-center">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_110295b02-1767382626999.png" 
+                             alt="AWS certified solutions architect logo" 
+                             class="w-12 h-12"
+                             onerror="this.src='https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?q=80&w=200&auto=format&fit=crop'; this.onerror=null;">
+                    </div>
+                    <h4 class="font-bold text-primary mb-2">AWS</h4>
+                    <p class="text-sm text-text-tertiary">Solutions Architect</p>
+                </div>
+
+                <!-- Ethereum -->
+                <div class="card p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-surface rounded-xl flex items-center justify-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" viewBox="0 0 256 417" fill="currentColor">
+                                <path d="M127.961 0l-2.795 9.5v275.668l2.795 2.79 127.962-75.638z" opacity=".6"/>
+                                <path d="M127.962 0L0 212.32l127.962 75.639V154.158z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-primary mb-2">Ethereum</h4>
+                    <p class="text-sm text-text-tertiary">Blockchain Expert</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section bg-gradient-to-br from-primary via-secondary to-primary-800 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2944&auto=format&fit=crop')] bg-cover bg-center opacity-10" 
+             onerror="this.style.backgroundImage='url(https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop)'; this.onerror=null;"></div>
+        
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute w-96 h-96 bg-accent/20 rounded-full blur-3xl -top-48 -left-48 animate-pulse-slow"></div>
+            <div class="absolute w-96 h-96 bg-secondary/20 rounded-full blur-3xl -bottom-48 -right-48 animate-pulse-slow" style="animation-delay: 1s;"></div>
+        </div>
+
+        <div class="container-custom relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-white mb-6">Ready to Build with Cutting-Edge Technology?</h2>
+                <p class="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
+                    Let's leverage our comprehensive technology stack to create innovative solutions that drive your business forward.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="contact.html" class="btn-accent w-full sm:w-auto text-lg px-8 py-4 shadow-xl hover:shadow-2xl hover:scale-105">
+                        Start Your Project
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </a>
+                    <a href="services.html" class="btn-outline border-white text-white hover:bg-white hover:text-primary w-full sm:w-auto text-lg px-8 py-4">
+                        Explore Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 text-white pt-16 pb-8">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="url(#footer-logo-gradient)"/>
+                            <path d="M12 28V12L20 20L28 12V28L20 20L12 28Z" fill="white"/>
+                            <defs>
+                                <linearGradient id="footer-logo-gradient" x1="0" y1="0" x2="40" y2="40">
+                                    <stop offset="0%" stop-color="#00D4AA"/>
+                                    <stop offset="100%" stop-color="#4C3A9B"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="font-headline text-xl font-bold">DevForge</span>
+                    </div>
+                    <p class="text-white/70 mb-6">
+                        Transforming ideas into digital reality through innovative software solutions and cutting-edge technology.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors" aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors" aria-label="Twitter">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors" aria-label="GitHub">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="services.html#mobile" class="text-white/70 hover:text-accent transition-colors">Mobile Development</a></li>
+                        <li><a href="services.html#web" class="text-white/70 hover:text-accent transition-colors">Web Applications</a></li>
+                        <li><a href="services.html#blockchain" class="text-white/70 hover:text-accent transition-colors">Blockchain Solutions</a></li>
+                        <li><a href="services.html#gaming" class="text-white/70 hover:text-accent transition-colors">Game Development</a></li>
+                        <li><a href="services.html#saas" class="text-white/70 hover:text-accent transition-colors">SaaS Platforms</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-white/70 hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="portfolio.html" class="text-white/70 hover:text-accent transition-colors">Portfolio</a></li>
+                        <li><a href="technology_stack.html" class="text-white/70 hover:text-accent transition-colors">Technology Stack</a></li>
+                        <li><a href="about.html#team" class="text-white/70 hover:text-accent transition-colors">Our Team</a></li>
+                        <li><a href="about.html#careers" class="text-white/70 hover:text-accent transition-colors">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Get in Touch</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-accent mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <a href="mailto:hello@devforge.com" class="text-white/70 hover:text-accent transition-colors">hello@devforge.com</a>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-accent mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <a href="tel:+1234567890" class="text-white/70 hover:text-accent transition-colors">+1 (234) 567-890</a>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-accent mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <span class="text-white/70">San Francisco, CA 94102</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-white/10">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                    <p class="text-white/60 text-sm">
+                        © 2026 DevForge Solutions. All Rights Reserved.
+                    </p>
+                    <div class="flex items-center space-x-6">
+                        <a href="javascript:void(0)" class="text-white/60 hover:text-accent text-sm transition-colors">Privacy Policy</a>
+                        <a href="javascript:void(0)" class="text-white/60 hover:text-accent text-sm transition-colors">Terms of Service</a>
+                        <a href="javascript:void(0)" class="text-white/60 hover:text-accent text-sm transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Sticky navigation
+        const nav = document.getElementById('main-navigation');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 100;
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
