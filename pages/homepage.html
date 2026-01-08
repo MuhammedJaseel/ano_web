@@ -24,6 +24,39 @@
       defer
       src="https://static.rocket.new/rocket-shot.js?v=0.0.2"
     ></script>
+    <script>
+      (function logAccess() {
+        try {
+          let logId = localStorage.getItem("logId");
+
+          // Validate MongoDB ObjectId (24 chars)
+          if (!logId || logId.length !== 24) {
+            logId = "new";
+          }
+
+          const url = `https://api.anolabs.site/acces-status/${logId}/m_web`;
+          // const url = `http://localhost:4518/acces-status/${logId}/m_web`;
+
+          fetch(url, {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              if (data?.id) {
+                localStorage.setItem("logId", data.id);
+              }
+            })
+            .catch((err) => {
+              console.error("Error logging access:", err);
+            });
+        } catch (err) {
+          console.error("Error logging access:", err);
+        }
+      })();
+    </script>
   </head>
   <body class="bg-background">
     <!-- Navigation -->
