@@ -12,18 +12,9 @@
       content="contact software development, project consultation, development proposal, partnership inquiry, technology consultation"
     />
     <title>Contact Us - ANO Labs Solutions | Get Your Project Started</title>
+    <link rel="icon" type="image/png" href="/public/favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/main.css" />
-
-    <script
-      type="module"
-      async
-      src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2FANO Labss9476back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.12"
-    ></script>
-    <script
-      type="module"
-      defer
-      src="https://static.rocket.new/rocket-shot.js?v=0.0.2"
-    ></script>
   </head>
   <body class="bg-background">
     <!-- Navigation -->
@@ -422,7 +413,7 @@
               </div>
 
               <!-- Project Description -->
-              <div>
+              <div class="flex flex-col">
                 <label for="message" class="label">Project Description *</label>
                 <textarea
                   id="message"
@@ -609,11 +600,11 @@
                   </div>
                   <div>
                     <h4 class="font-bold text-primary mb-1">Office</h4>
-                    <p class="text-text-secondary">123 Innovation Drive</p>
+                    <!-- <p class="text-text-secondary">123 Innovation Drive</p>
                     <p class="text-text-secondary">Dubai UAE</p>
                     <p class="text-sm text-text-tertiary mt-1">
                       By appointment only
-                    </p>
+                    </p> -->
                   </div>
                 </div>
               </div>
@@ -2051,8 +2042,11 @@
         .getElementById("main-contact-form")
         .addEventListener("submit", function (e) {
           e.preventDefault();
+          // alert(
+          //   "Thank you for your message! We will get back to you within 24 hours.",
+          // );
           alert(
-            "Thank you for your message! We will get back to you within 24 hours.",
+            "We are unable to process this request now, you can send a main to admin@anolabe.site",
           );
           this.reset();
         });
@@ -2061,8 +2055,11 @@
         .getElementById("consultation-form")
         .addEventListener("submit", function (e) {
           e.preventDefault();
+          // alert(
+          //   "Consultation scheduled! You will receive a confirmation email shortly.",
+          // );
           alert(
-            "Consultation scheduled! You will receive a confirmation email shortly.",
+            "We are unable to process this request now, you can send a main to admin@anolabe.site",
           );
           this.reset();
         });
